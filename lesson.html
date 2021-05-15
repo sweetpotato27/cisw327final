@@ -5,36 +5,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="./styles/lesson.css" rel="stylesheet">
     <title>CISW 327 Final Project: A GitHub Pages Tutorial</title>
 </head>
 <body>
+    <header>
+        <div class="header-div">header</div>
+    </header>
     <div id="wrapper">
-        <header>header</header>
         <main>
-            <div><span>create a folder called my_website</span></div>
-            <div><span>create the file /mywebsite/index.html</span></div>
-            <div><img></div>
-            <div><span>save file and open with browser</span></div>
-            <div><img></div>
-            <div><span>navigate to https://git-scm.com/downloads</span></div>
-            <div><img></div>
-            <div><span>open CLI and type git -version</span></div>
-            <div><span>navigate to https://github.com/createaccount</span></div>
-            <div><img></div>
-            <div><span>open CLI and config name and email</span></div>
-            <div><span>create a new github repository</span></div>
-            <div><img></div>
-            <div><span>name my_website and make public</span></div>
-            <div><img></div>
-            <div><span>some git commands will show...copy them in CLI</span></div>
-            <div><img></div>
-            <div><span>navigate to repo settings and click pages tab</span></div>
-            <div><img></div>
-            <div><span>confit source to branch: main & /(root)</span></div>
-            <div><img></div>
-            <div><span>WOOT!</span></div>
+            <div id="step_1" class="section">
+                <h2>1: Install Git and Register with GitHub</h2>
+                <div><span>Navigate to <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a> in a web browser<br> Click the download link that is specfic for your computer <br> Download and install git</span></div>
+                <img class="image" src="./images/gitdownload.png" alt="git download screenshot">
+                <div><span>Open a command line interface on your computer <br> Type 'git --version' and press enter <br> If you see something like 'git version 2.13.1'  git is installed</span></div>
+                <div><span>Navigate to <a href="https://github.com/join">https://github.com/join</a> in a web browser <br> Sign up for github</span></div>
+                <img class="image" src="./images/githubjoin.png" alt="github signup screenshot">
+                <div><span>Open command line interface <br> Configure username and email for git </span></div>
+                <img class="image" style="min-width: 500px;" src="./images/gitconfigure.png" alt="git configure cli screenshot">
+                <div><span>Check out <a href="https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup">this link</a> for more information</span></div>
+            </div>
+            <div id="step_2" class="section">
+                <h2>2: Make a simple webpage</h2>
+                <div><span>Create a folder called my_website <br> Create a file index.html inside of /my_website</span></div>
+                <div><span>Create a basic HTML page <br> Inside the body element <br> Add a span element with 'Hello, World!' inside</span></div>
+                <img class="image" src="./images/indexhtml.png" alt="html example screenshot">
+                <div><span>Save the HTML file and open with a web browser <br> If you see 'hello, world!' <br> Move on</span></div>
+            </div>
+            <div id="step_3" class="section">
+                <h2>3: Initialize git and push directory to GitHub</h2>
+                <div><span>Log in to github <br> Create a new github repository</span></div>
+                <img class="image" src="./images/newrepo.png" alt="new repository button screenshot">
+                <div><span>Name my_website <br> Make it public <br> Add a description if you want <br> Leave every thing else unchecked unless you do not want to</span></div>
+                <img class="image" src="./images/configrepo.png" alt="repository config screenshot">
+                <div><span>Some helpful git commands will show</span></div>
+                <img class="image" src="./images/gitclicommands.png" alt="git command line interface commands screenshot">
+                <div><span>Open your command line interface <br> Change (cd) to the /my_website directory <br> Type 'git init' <br> Type 'git commit -m "first commit"' <br> Type 'git branch -M main' <br> Type 'git remote add origin https://github.com/yourgithubname/yourrepositoryname.git' <br> The above is very important, copy the version that github gave you or <br> Replace username and repository name with your specific names <br> Type 'git push -u origin main' <br> If there are no errors then you are successful! <br> Continue to github pages set up...</span></div>
+            </div>
+            <div id="step_4" class="section">
+                <h2>4: Set up GitHub Pages</h2>
+                <div><span>Navigate to your github repository and click the settings tab <br> Then click the pages tab <br> You should see the following about half way down the page</span></div>
+                <img class="image" src="./images/githubpagessource.png" alt="github pages settings screenshot">
+                <div><span>Configure the source to branch: main <br> and select /(root) as the desired directory</span></div>
+                <div><span>Now for the most important part <br> Go listen to your favorite song <br> (right now mine is Down on the Street  by The Stooges) <br> After check github pages tab and if your site is published <br> Go check it out at the given url!</span></div>
+                <img class="image" style="min-width: 500px;" src="./images/successfulpublish.png" alt="successful publish screenshot">
+                <div><span>WOOT!</span></div>
+            </div>
         </main>
-        <footer>footer</footer>
     </div>
+    <footer>
+        <div class="footer-div">footer</div>
+    </footer>
 </body>
 </html>
