@@ -66,12 +66,12 @@ header {
     padding: 1em;
 }
 main {
-    margin-top: 2em;
+    margin-top: 3em;
     margin-bottom: 2em;
 }
 .project-links-div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 1em;
     max-width: 50%;
     margin: auto;
@@ -85,7 +85,7 @@ main {
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
-    width: 50%;
+    width: 40%;
     margin: 1em auto;
     min-height: 7em;
     background-color: #91E6D2;
