@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="./styles/contact.css" rel="stylesheet">
     <title>CISW 327 Final Project: A GitHub Pages Tutorial</title>
 </head>
 <body>
@@ -20,10 +23,11 @@
     <div id="wrapper">
         <main>
             <div class="project-links-div">
-                <div></div>
-                <div></div>
+                <a class="step-link link" href="./lesson.html">Student Page</a>
+                <a class="step-link link" href="./lesson.html#step_2">Portfolio Site</a>
             </div>
             <div class="contact-form-div">
+                <h2>Send me an email!</h2>
                 <form action="mailto:dbmsoftware27@gmail.com"
                     method="POST"
                     enctype="multipart/form-data"
@@ -40,7 +44,10 @@
                         <label for="message">Message: </label>
                         <textarea name="message" placeholder="Your message here..."></textarea>
                     </div>
-
+                    <div>
+                        <label for="submit"></label>
+                        <input name="submit" type="submit">
+                    </div>
                 </form>
             </div>
         </main>
