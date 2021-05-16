@@ -7,18 +7,50 @@
     <title>CISW 327 Final Project: A GitHub Pages Tutorial</title>
 </head>
 <body>
+    <header>
+        <div class="header-div">
+            <span>A GitHub Pages Guide</span>
+            <div class="nav">
+                <span><a href="./index.html">Main</a></span>
+                <span><a href="./lesson.html">Guide</a></span>
+                <span><a href="./contact.html">Contact</a></span>
+            </div>
+        </div>
+    </header>
     <div id="wrapper">
-        <header>header</header>
         <main>
             <div class="project-links-div">
                 <div></div>
                 <div></div>
             </div>
             <div class="contact-form-div">
-                <form></form>
+                <form action="mailto:dbmsoftware27@gmail.com"
+                    method="POST"
+                    enctype="multipart/form-data"
+                    name="EmailForm">
+                    <div>
+                        <label for="name">Name: </label>
+                        <input name="name" type="text" placeholder="Your name here...">
+                    </div>
+                    <div>
+                        <label for="email">Email: </label>
+                        <input name="email" type="email" placeholder="Your email here...">
+                    </div>
+                    <div>
+                        <label for="message">Message: </label>
+                        <textarea name="message" placeholder="Your message here..."></textarea>
+                    </div>
+
+                </form>
             </div>
         </main>
-        <footer>footer</footer>
     </div>
+    <footer>
+        <div class="footer-div">
+            <span><a href="https://github.com/sweetpotato27">github</a> &nbsp; <a
+                    href="https://www.linkedin.com/in/dylan-brinkman-matthews/">linkedin</a> &nbsp; <a
+                    href="mailto:dmbsoftware27@gmail.com">dbmsoftware27@gmail.com</a></span>
+        </div>
+    </footer>
 </body>
 </html>
